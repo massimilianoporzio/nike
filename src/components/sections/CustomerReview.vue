@@ -1,3 +1,3 @@
 <template>
-    <div>CustomerReviews Vue component</div>
+  <div>CustomerReviews Vue component</div>
 </template>

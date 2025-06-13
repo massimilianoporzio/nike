@@ -1,13 +1,10 @@
 <script setup>
-import LandingPage from './views/LandingPage.vue';
-import HelloMaxVue from './views/LandingPage.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-     <main class="relative">
-        Nav
-       <LandingPage />
-     </main>
-
+  <main class="relative">
+    Nav
+    <RouterView />
+  </main>
 </template>
-
