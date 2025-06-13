@@ -4,7 +4,7 @@ import { RouterView } from 'vue-router'
 
 <template>
   <main class="relative">
-    Nav
+    Nav e ciao Massimiliano
     <RouterView />
   </main>
 </template>
