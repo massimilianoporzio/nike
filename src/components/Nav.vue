@@ -8,7 +8,7 @@ var isOpen = ref(false)
 <template>
   <header class="padding-x py-8 absolute z-10 w-full">
     <nav class="flex items-center justify-between max-container">
-      <a href="/">
+      <a href="/" class="self-start">
         <img :src="headerLogo" alt="Logo" width="129" height="29" class="m-0 w-[129px] h-[29px]" />
       </a>
       <ul class="flex-1 flex justify-center items-center gap-12 max-lg:hidden mx-3">
