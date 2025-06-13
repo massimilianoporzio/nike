@@ -1,11 +1,18 @@
-<script setup lang="ts">
-import CustomerReview from '../components/sections/CustomerReview.vue'
-import PopularProducts from '../components/sections/PopularProducts.vue'
-import Services from '../components/sections/Services.vue'
+<script setup>
+import {
+  Hero,
+  PopularProducts,
+  Services,
+  CustomerReview,
+  Subscribe,
+  Footer,
+} from '@/components/sections'
 </script>
 
 <template>
-  <section class="xl:padding-1 wide:padding-r padding-b">Hero</section>
+  <section class="xl:padding-1 wide:padding-r padding-b">
+    <Hero />
+  </section>
   <section class="padding">
     <PopularProducts />
   </section>
@@ -16,6 +23,10 @@ import Services from '../components/sections/Services.vue'
   <section class="bg-pale-blue padding">
     <CustomerReview />
   </section>
-  <section class="padding-x sm:py-32 py-16 w-full">Subscribe</section>
-  <section class="bg-black padding-x padding-t pb-8">Footer</section>
+  <section class="padding-x sm:py-32 py-16 w-full">
+    <Subscribe />
+  </section>
+  <section class="bg-black padding-x padding-t pb-8">
+    <Footer />
+  </section>
 </template>
