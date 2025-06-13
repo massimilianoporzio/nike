@@ -1,0 +1,4 @@
+name = "nike"
+compatibility_date = "2025-06-13"
+assets = {directory = "dist"}
+route = { pattern = "nike.massimilianoporzio.com", custom_domain= true }
