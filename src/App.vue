@@ -1,8 +1,13 @@
 <script setup>
-import HelloMaxVue from './views/HelloMaxVue.vue'
+import LandingPage from './views/LandingPage.vue';
+import HelloMaxVue from './views/LandingPage.vue'
 </script>
 
 <template>
-<HelloMaxVue />
+     <main class="relative">
+        Nav
+       <LandingPage />
+     </main>
+
 </template>
 
