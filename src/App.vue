@@ -1,10 +1,12 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import Nav from '@/components/Nav.vue'
 </script>
 
 <template>
   <main class="relative">
-    Nav e ciao Massimiliano
+    <Nav />
+
     <RouterView />
   </main>
 </template>
