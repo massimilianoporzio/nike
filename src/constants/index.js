@@ -12,7 +12,7 @@ import {
   thumbnailShoe1,
   thumbnailShoe2,
   thumbnailShoe3,
-} from '../assets/images'
+} from '@/assets/images'
 
 export const navLinks = [
   { href: '#home', label: 'Home' },

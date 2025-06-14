@@ -1,7 +1,7 @@
 <script setup>
 import { headerLogo } from '@/assets/images'
 import { hamburger } from '@/assets/icons'
-import { navLinks } from '../constants'
+import { navLinks } from '@/constants'
 import { ref } from 'vue'
 var isOpen = ref(false)
 </script>
