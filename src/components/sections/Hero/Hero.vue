@@ -12,7 +12,7 @@ const bigShoeModel = ref(bigShoe1)
 <template>
   <section
     id="home"
-    class="flex justify-center w-full min-h-screen gap-10 xl:flex-row max-container"
+    class="flex justify-center w-full min-h-screen gap-10 xl:flex-row flex-col max-container"
   >
     <div class="relative flex flex-col items-start justify-center w-full xl:w-2/5 padding-x pt-28">
       <p class="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
@@ -36,7 +36,7 @@ const bigShoeModel = ref(bigShoe1)
       </div>
     </div>
     <div
-      class="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-hero bg-coverr bg-center"
+      class="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-coverr bg-center"
     >
       <img
         :src="bigShoeModel"
