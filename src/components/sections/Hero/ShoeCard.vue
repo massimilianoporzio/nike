@@ -3,6 +3,7 @@
     class="cursor-pointer max-sm:flex-1 border-2 rounded-xl"
     :class="shoeImage.bigShoe === bigShoeModel ? 'border-coral-red' : 'border-transparent'"
     @click="handleClick"
+    @mouseover="changeBigShoeImage(shoeImage.bigShoe)"
   >
     <div
       class="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4"
