@@ -27,7 +27,7 @@ var isOpen = ref(false)
       >
         <a href="/">Sign in</a>
         <span>/</span>
-        <a href="/">Explore now</a>
+        <a href="/" class="mr-18">Explore now</a>
       </div>
       <div class="max-lg:flex flex-col items-center justify-center hidden">
         <img
@@ -53,7 +53,7 @@ var isOpen = ref(false)
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
         <div
-          class="bg-white--400 w-50 h-50 mt-2 flex flex-col justify-center items-center"
+          class="bg-primary z-20 w-50 h-50 mt-2 flex flex-col justify-center items-center"
           v-if="isOpen"
         >
           <ul class="flex flex-col gap-2 justify-around items-center">

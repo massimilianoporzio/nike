@@ -1,13 +1,12 @@
 <template>
   <div
     class="cursor-pointer max-sm:flex-1 border-2 rounded-xl"
-    :class="shoeImage === bigShoeImage ? 'border-coral-red' : 'border-transparent'"
+    :class="shoeImage.bigShoe === bigShoeModel ? 'border-coral-red' : 'border-transparent'"
     @click="handleClick"
   >
     <div
       class="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4"
     >
-      {{ shoeImage.bigshoe }}
       <img
         :src="props.shoeImage.thumbnail"
         alt="a shoe image"
@@ -21,21 +20,26 @@
 
 <script setup>
 import { defineProps } from 'vue'
+import { defineModel } from 'vue'
+const bigShoeModel = defineModel('bigShoeModel', {
+  type: String,
+  required: true,
+})
 const handleClick = () => {
-  if (props.shoeImage.bigshoe !== props.bigShoeImage) {
-    changeBigShoeImage(shoeImage.bigshoe)
+  console.log(props)
+  if (props.shoeImage.bigShoe !== bigShoeModel.value) {
+    changeBigShoeImage(props.shoeImage.bigShoe)
   }
+}
+
+function changeBigShoeImage(newImage) {
+  bigShoeModel.value = newImage
 }
 //TODO model-value 2 way binding per fare update del bigShoeImage
 const props = defineProps({
   shoeImage: {
     type: Object,
-    default: { thumbnail: 'ciao', bigshoe: '' },
-  },
-
-  changeBigShoeImage: {
-    type: Function,
-    required: false,
+    default: { thumbnail: 'ciao', bigshoe: 'ahahah' },
   },
 })
 </script>

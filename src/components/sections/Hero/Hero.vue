@@ -5,6 +5,8 @@ import { bigShoe1, bigShoe2, bigShoe3 } from '@/assets/images'
 import { statistics, shoes } from '@/constants'
 import Statistic from './Statistic.vue'
 import ShoeCard from './ShoeCard.vue'
+import { ref } from 'vue'
+const bigShoeModel = ref(bigShoe1)
 </script>
 
 <template>
@@ -17,7 +19,7 @@ import ShoeCard from './ShoeCard.vue'
     >
       <p class="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
 
-      <h1 class="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leasding-[82] font-bold">
+      <h1 class="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82] font-bold">
         <span class="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
         <br />
         <span class="text-coral-red inline-block mt-3">Nike</span> Shoes
@@ -39,7 +41,7 @@ import ShoeCard from './ShoeCard.vue'
       class="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-hero bg-coverr bg-center"
     >
       <img
-        :src="bigShoe1"
+        :src="bigShoeModel"
         alt="shoe collection"
         width="610"
         height="500"
@@ -50,7 +52,7 @@ import ShoeCard from './ShoeCard.vue'
           v-for="shoe in shoes"
           :key="shoe.thumbnail"
           :shoeImage="shoe"
-          :bigShoeImage="shoe.bigShoe"
+          v-model:bigShoeModel="bigShoeModel"
         />
       </div>
     </div>
