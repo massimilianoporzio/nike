@@ -5,7 +5,7 @@ import Nav from '@/components/Nav.vue'
 
 <template>
   <main class="relative">
-    <Nav />
+    <Nav class="z-50" />
 
     <RouterView />
   </main>

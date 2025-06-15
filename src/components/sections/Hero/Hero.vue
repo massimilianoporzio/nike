@@ -14,9 +14,7 @@ const bigShoeModel = ref(bigShoe1)
     id="home"
     class="flex justify-center w-full min-h-screen gap-10 xl:flex-row max-container"
   >
-    <div
-      class="relative flex flex-col items-start justify-center w-full xl:w-2/5 max-xl:padding-x pt-28"
-    >
+    <div class="relative flex flex-col items-start justify-center w-full xl:w-2/5 padding-x pt-28">
       <p class="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
 
       <h1 class="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82] font-bold">

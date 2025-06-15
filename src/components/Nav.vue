@@ -53,10 +53,10 @@ var isOpen = ref(false)
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
         <div
-          class="bg-primary z-20 w-50 h-50 mt-2 flex flex-col justify-center items-center"
+          class="bg-primary opacity-95 w-60 h-50 mt-2 flex flex-col justify-center items-center"
           v-if="isOpen"
         >
-          <ul class="flex flex-col gap-2 justify-around items-center">
+          <ul class="flex flex-col gap-2 z-21 justify-around items-center">
             <li v-for="link in navLinks" :key="link.label">
               <a
                 href="#"
