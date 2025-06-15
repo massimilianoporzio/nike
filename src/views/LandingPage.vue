@@ -10,7 +10,7 @@ import {
 </script>
 
 <template>
-  <section class="xl:padding-1 wide:padding-r padding-b">
+  <section class="xl:padding-l wide:padding-r padding-b">
     <Hero />
   </section>
   <section class="padding">
